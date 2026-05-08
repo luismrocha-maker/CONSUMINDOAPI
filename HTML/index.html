@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>api</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="particles"></div>
+
+    <main class="container">
+
+        <h1>Valdenilson the best</h1>
+
+
+        <section class="card">
+
+            <h2>API CEP</h2>
+
+            <div class="input-box">
+                <label for="cep">CEP</label>
+
+                <input 
+                    type="text" 
+                    id="cep"
+                    placeholder="Digite o CEP"
+                >
+            </div>
+
+            <button onclick="buscarCEP()">
+                Buscar CEP
+            </button>
+
+            <hr>
+
+            <div class="input-box">
+                <label for="rua">Rua</label>
+
+                <input 
+                    type="text" 
+                    id="rua"
+                    readonly
+                >
+            </div>
+
+            <div class="input-box">
+                <label for="estado">Estado</label>
+
+                <input 
+                    type="text" 
+                    id="estado"
+                    readonly
+                >
+            </div>
+
+            <div class="input-box">
+                <label for="cidade">Cidade</label>
+
+                <input 
+                    type="text" 
+                    id="cidade"
+                    readonly
+                >
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>API Cotação do Dólar</h2>
+
+            <button onclick="cotacaoDolar()">
+                Ver Cotação
+            </button>
+
+            <p id="cotacao"></p>
+
+            <div class="input-box">
+                <label for="real">Valor em Real</label>
+
+                <input 
+                    type="number" 
+                    id="real"
+                    placeholder="Digite em reais"
+                >
+            </div>
+
+            <button onclick="converterParaDolar()">
+                Converter para Dólar
+            </button>
+
+            <p id="resultadoDolar"></p>
+
+            <div class="input-box">
+                <label for="dolar">Valor em Dólar</label>
+
+                <input 
+                    type="number" 
+                    id="dolar"
+                    placeholder="Digite em dólar"
+                >
+            </div>
+
+            <button onclick="converterParaReal()">
+                Converter para Real
+            </button>
+
+            <p id="resultadoReal"></p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>API Países</h2>
+
+            <div class="input-box">
+                <label for="pais">Nome do País</label>
+
+                <input 
+                    type="text" 
+                    id="pais"
+                    placeholder="Digite um país"
+                >
+            </div>
+
+            <button onclick="buscarPais()">
+                Buscar País
+            </button>
+
+            <div class="pais-info">
+
+                <img id="bandeira">
+
+                <p id="capital"></p>
+
+                <p id="populacao"></p>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>API Cachorros</h2>
+
+            <button onclick="buscarDog()">
+                Gerar Cachorro
+            </button>
+
+            <img id="dogImg">
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
